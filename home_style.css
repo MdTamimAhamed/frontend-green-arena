@@ -42,7 +42,7 @@ html,body{
 
 /*-----Top header styles-----*/
 .header-top{
-    background-color: var(--light-pink);
+    background-color: var(--light-gray);
     padding: 8px 0;
 }
 .top-header-wrapper{
@@ -59,12 +59,12 @@ html,body{
     padding-right: 15px;
 }
 .top-header-left i{
-    color: var(--deep-pink);
+    color: var(--solid-black);
     font-size: .8em;
     padding-right: 7px;
 }
 .top-header-left .tips-text{
-    color: var(--deep-pink);
+    color: var(--solid-black);
     font-size: .7em;
     font-weight: 500;
     font-style: italic;
@@ -85,11 +85,11 @@ html,body{
 .top-header-right p{
     font-size: .7em;
     font-weight: 500;
-    color: var(--deep-pink);
+    color: var(--solid-black);
     cursor: pointer;
 }
 .top-header-right i{
-    color: var(--deep-pink);
+    color: var(--solid-black);
     font-size: .8em;
     margin: 0 5px;
     cursor: pointer;
@@ -989,206 +989,3 @@ html,body{
 /*//////////////////////////////*/
 
 /*-----Gardening section styles-----*/
-.gardening-wrapper{
-    margin-top: 150px;
-}
-.gardening-card-container{
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.gardening-card{
-    flex-basis: 31.8%;
-
-    margin-bottom: 15px;
-}
-.gardening-image{
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-.gardening-image::after{
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 50%;
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    background-color: var(--solid-black);
-    transition: all 300ms ease;
-}
-.gardening-image img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-.g-image-content{
-    padding: 10px 0px;
-    font-size: 1.2em;
-    font-weight:600;
-    color: var(--deep-green);
-    text-align: center;
-}
-.view-product-btn{
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    border: 2px solid var(--light-gray);
-    border-radius: 5em;
-    padding: 15px 25px;
-    font-size: 1em;
-    letter-spacing: 0px;
-    color: var(--solid-white);
-    opacity: 0;
-    z-index: 1;
-    cursor: pointer;
-    transition: opacity 400ms  200ms ease,
-    letter-spacing 400ms ease,
-    top 400ms ease;
-}
-.gardening-image:hover::after{
-    height: 100%;
-    width: 100%;
-    opacity: .5;
-}
-.gardening-image:hover .view-product-btn{
-    opacity: 1;
-    top: 50%;
-}  
-.view-product-btn:hover{
-    letter-spacing: 2px;
-}
- 
-/*//////////////////////////////*/
-
-/*-----Our deals section styles-----*/
-.offer-title{
-    margin-top: 170px;
-    text-align: center;
-    font-size: 1.6em;
-    color: var(--deep-green);
-}
-.deal-wrapper{
-    margin-top: 70px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-.timer-order-cta{
-    flex-basis: 35%;
-}
-.timer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--light-gray);
-    border-left: 6px solid var(--deep-green);
-    padding: 10px 30px;
-}
-.timer-order-cta .time{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 35%;
-    color: var(--deep-green);
-}
-.timer-order-cta .time h3{
-    font-size: 2.2em;
-    color: var(--deep-green);
-}
-.order-cta h1{
-    margin-top: 40px;
-    font-size: 2em;
-    color: var(--deep-green);
-    line-height: 45px;
-}
-.order-cta span{
-    color: var(--pink-clr);
-}
-.order-cta p{
-    font-size: .9em;
-    color: var(--deep-green);
-    margin-top: 10px;
-}
-.deal-btn{
-    padding: 7px 15px;
-    margin-top: 30px;
-    font-family: 'Poppins',sans-serif;
-    font-size: 1em;
-    font-weight:400;
-    background-color: var(--deep-green);
-    border: none;
-    border-radius: 5em;
-    color: var(--solid-white);
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-.deal-btn i{
-    margin-left: 5px;
-}
-.deal-btn:hover{
-    letter-spacing: 2px;
-}
-
-/*Offer cards style*/
-.offer-plants-container{
-    flex-basis: 60%;
-    display: flex;
-    justify-content: space-between;
-}
-.offer-card{
-    flex-basis: 48.5%;
-    background-color: var(--light-sky);
-    padding-bottom: 10px;
-    position: relative;
-}
-.offer-image{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.offer-image img{
-    width: 80%;
-    height: 100%;
-}
-.quick-view{
-    position: absolute;
-    left: 50%;
-    bottom: 8%;
-    transform: translate(-50%, 24%);
-    background-color: var(--solid-white);
-    border-radius: 5px;
-    padding: 12px 30px;
-    font-size: 1em;
-    font-weight: 600;
-    letter-spacing: 0px;
-    color: var(--deep-green);
-    cursor: pointer;
-    transition: all 400ms ease;
-}
-.quick-view::before{
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: -12%;
-    width: 15px;
-    height: 15px;
-    transform: translateX(-50%) rotate(45deg);
-    background-color: var(--solid-white);
-}
-.quick-view:hover{
-    letter-spacing: 1.5px;
-}
-.offer-card:hover .quick-view{
-    transform: translate(-50%, 0%);
-}
-
-/*//////////////////////////////*/
