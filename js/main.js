@@ -66,3 +66,9 @@ videoClose.addEventListener('click', ()=>{
         body.classList.remove("body-scroll-off");
     }
 })
+videoBackLayer.addEventListener('click', ()=>{
+    if(videoBackLayer.classList.contains("video-layer-active")){
+        videoBackLayer.classList.remove("video-layer-active");
+        body.classList.remove("body-scroll-off");
+    }
+})
