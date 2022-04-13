@@ -208,7 +208,7 @@ html,body{
     align-items: center;
     position: absolute;
     width: 95.1%;
-    height: 70px;
+    height: 65px;
     top: -10%;
     left: 50%;
     visibility: hidden;
@@ -391,8 +391,9 @@ html,body{
     left: 0;
     top: 0;
     z-index:9999 ;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.8);
     transition: all 1s ease;
+    animation: video 400ms ease;
 }
 .video-layer-active{
     display: block;
@@ -423,6 +424,21 @@ html,body{
 .close-layer i:hover{
     color: var(--secondary-clr);
 }
+@keyframes video {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 /*--------------------*/
 
 .hero-right .outer-ring{
